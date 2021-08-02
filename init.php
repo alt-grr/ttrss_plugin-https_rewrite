@@ -90,6 +90,10 @@ class https_rewrite extends Plugin {
 		return $rv;
 	}
 
+	function csrf_ignore($method) {
+		return $method === "redirect";
+	}
+
 	function redirect() {
 
 		$client = new PhCURL($_REQUEST["url"]);
