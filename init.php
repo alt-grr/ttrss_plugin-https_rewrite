@@ -64,7 +64,7 @@ class https_rewrite extends Plugin {
 
 		// Adapted from functions2.php -> format_article_enclosures()
 		if (preg_match("/image/", $entry["type"]) ||
-			preg_match("/\.(jpg|png|gif|bmp)/i", $entry["filename"])) {
+			preg_match("/\.(jpg|jpeg|png|gif|bmp)/i", $entry["filename"])) {
 
 			if (!$hide_images) {
 				$encsize = '';
