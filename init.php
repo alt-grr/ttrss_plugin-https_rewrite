@@ -23,7 +23,6 @@ class https_rewrite extends Plugin {
 		}
 
 		$this->host = $host;
-		$this->dbh = Db::get();
 		$host->add_hook($host::HOOK_RENDER_ARTICLE_CDM, $this);
 		$host->add_hook($host::HOOK_RENDER_ENCLOSURE, $this);
 	}
